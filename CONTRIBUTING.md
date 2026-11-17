@@ -37,7 +37,7 @@ Everything else (scripts, images, `briefing.sqf`, `tss.toml`) is optional.
 | Summary | `description.ext`: `overviewText = "...";` (optional) |
 | Map | the folder name after the last `.` |
 | Slots | every unit in `mission.sqm` marked **Playable** (or **Player**); headless clients are not slots |
-| Slot group | the part of the unit's **Role Description** after `@`; otherwise the group's **Callsign** |
+| Slot group | the part of the unit's **Role Description** after `@`; otherwise the group's **Callsign**; otherwise a name like "BLUFOR 1" |
 | Slot name | the part of the Role Description before `@`; otherwise the unit type, for example "Rifleman" |
 | Briefing | see section 3 |
 
@@ -50,14 +50,22 @@ The site shows only the briefing that players have **when the mission starts**. 
 The site finds a briefing when:
 
 - it is in a script whose file name contains `briefing`, in any folder (for example `briefing.sqf` or `scripts\briefing.sqf`), and
-- `init.sqf` or `initPlayerLocal.sqf` starts that script, for example with `execVM "scripts\briefing.sqf";`, and
-- each section is a plain line like this:
+- `init.sqf` or `initPlayerLocal.sqf` starts that script right away, either on its own line or inside `if (hasInterface) then { … }`, for example:
+
+```sqf
+if (hasInterface) then {
+    call compile preprocessFileLineNumbers "scripts\briefing.sqf";
+};
+```
+
+  `execVM "briefing.sqf";` and `[] spawn compile preprocessFileLineNumbers "briefing.sqf";` work too. A start that comes after a `sleep` or `waitUntil`, or sits inside a `spawn { … }` block, a trigger or an event handler, counts as "during the mission".
+- in that script, each section is one `createDiaryRecord` with the text written out in quotes (it may span several lines):
 
 ```sqf
 player createDiaryRecord ["Diary", ["Situation", "Text of the section.<br/>A second line."]];
 ```
 
-Lines inside `spawn`, `if`, `addAction` or event handler blocks, or after a `sleep` or `waitUntil`, are treated as "during the mission" and are not shown.
+Only lines at the top level of the script count. Lines inside `spawn`, `if`, `addAction`, event handlers or any other `{ … }` block, lines after a `sleep` or `waitUntil`, and text built with `format` or `localize` are treated as "during the mission" or unreadable and are not shown.
 
 Arma shows the last created section first, so write the sections in reverse order (for example Execution, Mission, Situation). `<br/>` and `<marker name='...'>...</marker>` work as in Arma.
 
