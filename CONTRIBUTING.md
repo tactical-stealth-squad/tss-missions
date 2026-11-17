@@ -1,6 +1,12 @@
 # Adding a mission
 
-This guide is for mission makers. You need the Arma 3 Eden editor and a way to upload files to GitHub (the web interface is enough). [`op_example.Stratis`](op_example.Stratis) is a complete example you can copy.
+This guide is for mission makers. You need the Arma 3 Eden editor and a GitHub account. [`op_example.Stratis`](op_example.Stratis) is a complete example you can copy.
+
+## 0. Getting your files into the repository
+
+1. Ask a TSS admin for **write access** to this repository, and tell them your GitHub user name. You only need to do this once.
+2. **New mission:** on the repository's main page click **Add file → Upload files**, drag your whole mission folder from Windows Explorer onto the page, and click **Commit changes**.
+3. **Updating a mission:** open your mission's folder on GitHub, click **Add file → Upload files**, drag in the changed files, and click **Commit changes**. Files with the same name are replaced.
 
 ## 1. One folder per mission
 
@@ -25,6 +31,7 @@ Renaming a folder makes it a new mission on the site, so pick the name once.
 | `mission.sqm` | The Eden save. Must be saved **unbinarized** (see below). |
 | `description.ext` | Normal Arma mission settings (`onLoadName`, `Header`, ...). |
 | `briefing.sqf` | The briefing, written with `createDiaryRecord` (see below). |
+| `initPlayerLocal.sqf` | Shows the briefing in game (see below). |
 | `tss.toml` | TSS information about the mission (see below). |
 
 Any other files (scripts, images, sounds) are fine and are ignored by the site.
@@ -51,7 +58,13 @@ Write the briefing in `briefing.sqf` with one line per section:
 player createDiaryRecord ["Diary", ["Situation", "Text of the section.<br/>A second line."]];
 ```
 
-Arma shows the last created section first, so write the sections in reverse order (for example Execution, Mission, Situation). `<br/>` and `<marker name='...'>...</marker>` work as in Arma.
+Arma shows the last created section first, so write the sections in reverse order (for example Execution, Mission, Situation). `<br/>` and `<marker name='...'>...</marker>` work as in Arma; a marker link needs a marker with that variable name in the mission.
+
+Arma does not run `briefing.sqf` on its own. Add a file `initPlayerLocal.sqf` next to it with this line (if the file already exists, add the line to it):
+
+```sqf
+execVM "briefing.sqf";
+```
 
 ## 3. `tss.toml`
 
@@ -76,4 +89,4 @@ If `tss.toml` is missing or wrong, or `mission.sqm` cannot be read, the site doe
 
 ## 4. Reporting a problem with a mission
 
-Players report problems on the mission's page on the TSS site; the site opens an issue here for them. You can also use **Issues → New issue → Problem report** on GitHub. Every report gets the label `problem-report` and a `category:` label; add the label `mission:<folder name>` (for example `mission:op_example.Stratis`) so it shows up on the right mission.
+Players report problems on the mission's page on the TSS site; the site opens an issue here for them. You can also use **Issues → New issue → Problem report** on GitHub. Reports from the site get their labels automatically. A report filed on GitHub only gets `problem-report`; a mission maker with write access then adds the matching `category:` label (`category:bug`, `category:balance`, `category:briefing` or `category:other`) and the label `mission:<folder name>` (for example `mission:op_example.Stratis`), so it shows up on the right mission.
