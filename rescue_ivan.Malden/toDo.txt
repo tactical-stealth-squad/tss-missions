@@ -1,0 +1,23 @@
+Feedback vom CM 06.04.2021
+++ Rechtschreibfehler "feindSlage"
+++ AKM Magazine Grenadier
+++ JIP für Geisel Ace Interaction
+++ selfstich Doktoren
+oo schwimmende KI (sollte behoben sein)
+++ Alternativer Support falls Stromgenerator gar nicht gemacht wird
+++ Hold Action Störsender 
+++ Pandur Patroullie
+-- schwebende Sandsäcke (Brain mal nach seinem Script fragen ... aber eig sollte Haus nicht zerstört werden) 
+++ Lechtürme deaktivieren
+++ Zivi Fahrzeuge auf anderen Inseln für Immersion
+-- VCOM Einbindung prüfen
+-- Loadouts prüfen - Gearfield Standard?
+
+###CM 27.09 für Version 0.11###
+++ Rechtschreibung: The Big Show // sprint eine Mille // 
+-- DLC Slots in Slotliste markieren
+-- Geiselnehmer keine Waffe?!
+-- Geisel wieder ausm Heli?!
+-- Joininit fehlerhaft?!
+-- SPZ buggy?!
+-- 3 Feinde im Wasser?!

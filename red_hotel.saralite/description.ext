@@ -1,0 +1,19 @@
+cba_settings_hasSettingsFile = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 4;
+    maxPlayers = 14;
+};
+
+onLoadName = "Red Hotel";
+author = "Brigade2010, ported by [FHW] Gearfield";
+OnLoadMission = "Es wird hart.";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

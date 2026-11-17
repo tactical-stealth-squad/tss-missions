@@ -1,0 +1,17 @@
+Changelog
+
+v1.16
+====
+- New feature where you can now spawn as many enemy AI squads as you want through your action menu.
+
+- Increased the Garrison Strength, allowing you to spawn and garrison a minimum of 8 and a maximum of 100 enemy soldiers from a faction of your choice.
+- New, you can now turn off the garrison if you wish.
+
+- Optimized garrisoning code, removing the initial freeze/lag at the start of the mission.
+Now garrisoning is done in a more efficient and faster manner. 
+
+- New MP parameter for the player stats to the player: none, HUD, mouse action (hint)
+
+- Updated MP parameters, giving them some more details to their descriptions.
+- Fixed/Updated the save/load loadout function with arsenal now all your loadout should save and load.
+- Updated the briefing removing the mission section.

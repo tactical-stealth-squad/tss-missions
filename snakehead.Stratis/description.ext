@@ -1,0 +1,29 @@
+cba_settings_hasSettingsFile = 1;
+
+author="=TSS= .:NemesisoD:. edit by brainslush changed by zinki";
+OnLoadName = "[=TSS=] Co08 Snakehead";
+OnLoadMission = "Infiltiere die Stadt ohne die Feinde zu alamieren und lege einen Hinterhalt für den Kommandeur.";
+loadScreen = "pics\snakehead.paa";
+
+briefingName = "[=TSS=] Co08 Snakehead";
+overviewText = "2.04 || DC || Parameter";
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 11;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

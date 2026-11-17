@@ -1,0 +1,91 @@
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 8;
+};
+
+respawn = "base"; 
+respawndelay = 2;
+
+onLoadName = "Desert OPS Run - Tactical Arena";
+onLoadMission = "Locate the ammocaches, the commander, the garrisoned enemy and eliminate them!";
+author = "Gunter Severloh & Rydygier";
+loadScreen = "Desert OPS Run.jpg";
+
+	class Params
+	{
+		#ifndef WEATHER_DEFAULT
+		#define WEATHER_DEFAULT	25
+		#endif
+
+		class Weather
+		{
+			title = $STR_A3_rscattributeovercast_title;
+			values[] = {0,25,50,75,100};
+			texts[] = {	$STR_A3_rscattributeovercast_value000_tooltip,$STR_A3_rscattributeovercast_value025_tooltip,$STR_A3_rscattributeovercast_value050_tooltip,$STR_A3_rscattributeovercast_value075_tooltip,$STR_A3_rscattributeovercast_value100_tooltip
+};
+		default = WEATHER_DEFAULT;
+		function = "BIS_fnc_paramWeather";
+	};
+	
+	class AISkill
+		{
+			title = "AI Skill"; // Param name visible in the list
+			texts[] = {"Very Easy","Easy","Normal","Hard", "Very Hard"}; // Values; must be integers; has to have the same number of elements as 'texts'
+			values[] = {0,1,2,3,4}; // Description of each selectable item			
+			default = 1; // Default value; must be listed in 'values' array, otherwise 0 is used
+		};
+		
+		class Daytime
+   		{
+		  title = "Time of the day";
+		  texts[] = {"Dawn","Morning","Noon","Afternoon","Dusk","Night"};
+		  values[] = {6,8,12,16,18,0};
+		  default = 6;
+		  function = "BIS_fnc_paramDaytime"; // (Optional) Function called when player joins, selected value is passed as an argument
+      //isGlobal = 1; // (Optional) 1 to execute script / function locally for every player who joins, 0 to do it only on server
+   		};
+	    class stamina
+    	{
+      title = "Stamina & Fatigue for players";
+      texts[] = {"No stamina or fatigue","Stamina & Fatigue enabled"};
+      values[] = {0,1};
+      default = 1;
+      isGlobal = 1;
+    };
+	
+	class Garrison
+		{
+		title = "Garrison Strength - Number of enemy soldiers to garrison the arena buildings";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"No garrison","8 soldiers","16 soldiers","24 soldiers","32 soldiers","40 soldiers","48 soldiers","56 soldiers","64 soldiers","72 soldiers","80 soldiers"};
+		default = 2;
+		};
+		
+	class PatrolSpawn
+		{
+		title = "Enemy Patrol Spawn Mode";
+		values[] = {0,1};
+		texts[] = {"AUTO - AI patrol arena & respawn when killed","MANUAL - Spawn AI squads to patrol the arena"};
+		default = 0;
+		};
+		
+	class StatsMode
+		{
+		title = "How player's statistics should be provided";
+		values[] = {0,1,2};
+		texts[] = {"NO STATS","HUD","MOUSE ACTION"};
+		default = 1;
+		};
+		
+	class endParam
+    {
+      title = "______________________________________________________________________________________________________________________________________";
+      values[] = {0};
+      texts[] = {""};
+      default = 0;
+    };
+};
+
+#include "GUI.hpp"

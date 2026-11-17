@@ -1,0 +1,7 @@
+title = "Mr. Snowman"
+author = "Alcatron, zinki"
+type = "coop"
+tags = ["winter", "fog"]
+min_players = 1
+max_players = 10
+summary = "Infiltrieren Sie auf die Insel und stören Sie die feindliche Kommunikationsanlage!"

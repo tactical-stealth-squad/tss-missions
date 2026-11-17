@@ -1,0 +1,17 @@
+### Gearfield 03012021 ###
+00 Bei mir regnets da nämlich immer. -> Regen war schon vorher aus dafür das Schneescript 
+++ Ich lass Dir mal mein angepasstes Schneeskript da. Vielleicht sagt es Dir ja zu.
+++ Der Trawler ist verbuggt, man fällt Durch die Textur
+
+### für KAT ###
+Schütze:
+5 x Guedel-Tubus
+2 x Chest Seal
+
+Sani:
+15 x King LT (Larynxtubus)
+5 x Chest Seal
+5 x AAT-Kit
+1 x Accuvac
+1 x AED-X (alternativ: 1 x AED, 1 x Pulse Oxymeter)
+evtl. Stethoskop

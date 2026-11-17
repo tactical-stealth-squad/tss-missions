@@ -1,0 +1,44 @@
+private ["_player", "_klasse"];
+_player = _this select 0;
+
+_klasse = vehicleVarName _player;
+
+switch (_klasse) do {
+    case "s1": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s2": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s3": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s4": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s5": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s6": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s7": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s8": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s9": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s10": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s11": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s12": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s13": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s14": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s15": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s16": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s17": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s18": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s19": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s20": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s21": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s22": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s23": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s24": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s25": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s26": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s27": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s28": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s29": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s30": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s31": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	case "s32": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	//case "s33": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	//case "s34": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	//case "s35": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	//case "s36": {[_player, 7000, false, true, true] spawn compile preprocessFileLineNumbers "scripts\fn_halo.sqf"};
+	default {};
+};

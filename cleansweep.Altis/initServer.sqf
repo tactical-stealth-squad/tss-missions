@@ -1,0 +1,10 @@
+// SKill
+{
+	if (side _x isEqualTo west) then {
+		_x setskill ["spotDistance", 1];
+		_x setskill ["spotTime", 1];
+		_x setskill ["courage", 1]
+	}
+} foreach Allunits;
+
+0 setFog [ 1, 0.2, 0.1]

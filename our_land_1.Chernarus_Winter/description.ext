@@ -1,0 +1,59 @@
+cba_settings_hasSettingsFile = 1;
+
+author = "[=TSS=] zinki";
+onLoadName = "[=TSS=] Our Land - Part 1";
+onLoadmission = "[=TSS=] Our Land - Part 1";
+onLoadIntro = "[=TSS=] zinki";
+
+briefingName = "[=TSS=] Our Land - Part 1";
+overviewText = "v0.01"; // + weitere Infos
+//loadScreen = "img\intro.jpg";
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 27;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+class CfgSounds {
+    sounds[] = {};
+
+    class DAZ_Hack_son
+    {
+        name = "DAZ_BCM_Hack_son";
+        sound[] = {"sound\DAZ_BCM_Hack_son.ogg", 8, 1, 15};
+        titles[] = {};
+    };
+    class DAZ_mdp_ok
+    {
+        name = "DAZ_mdp_ok";
+        sound[] = {"sound\DAZ_BCM_mdp_ok.ogg", db+20, 1};
+        titles[] = {};
+    };
+    class DAZ_mdp_erreur
+    {
+        name = "DAZ_mdp_erreur";
+        sound[] = {"sound\DAZ_BCM_mdp_erreur.ogg", db+20, 1};
+        titles[] = {};
+    };
+};

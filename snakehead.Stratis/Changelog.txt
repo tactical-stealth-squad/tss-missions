@@ -1,0 +1,10 @@
+### CM 10012022 ###
+++ Lage: U-Boote -> U-Boote gegen Schlauchboote ersetzt
+++ Bei Verbündete ist am Ende en Absatz zu viel
+++ Ich würde der Auftrag und die Ausrüstung auch ohne Artikel aufführen
+++ bei zinki fehlt das i
+-- Ich hab das geplätscher vom Boot dauerhaft
+++ Konvoi oder Convoy aber keine Mischform
+++ Nur ein Fahrzeug für "Konvoi" ... 
+++ Ifritts andere Texture geben
+++ hidebody muss aufm Server ausgeführt werden -> danach auch löschen

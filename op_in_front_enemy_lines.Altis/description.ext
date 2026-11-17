@@ -1,0 +1,39 @@
+author = "[=TSS=] joker7";
+onLoadName = "[=TSS=] Co60 Op In Front Enemy Lines"; //statt zB. Co08 Co08
+onLoadmission = "";
+onLoadIntro = "[=TSS=] joker7";
+loadScreen = "images\TSSWallpaper6.jpg"; //Nicht unbedingt notwendig
+overviewText = "0.15 // E"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 1;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 65;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+
+/* Vcom stuff */
+class CfgFunctions
+{
+	#include "Vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers 
+{
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};

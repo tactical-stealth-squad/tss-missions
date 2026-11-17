@@ -1,0 +1,76 @@
+cba_settings_hasSettingsFile = 1;
+
+// VCOM Begin
+allowFunctionsRecompile = 1;
+
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+
+};
+
+class Extended_PreInit_EventHandlers {
+    VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+class CfgFunctions
+{
+    #include "vcom\cfgFunctions.hpp"
+};
+// VCOM End
+
+//**************** Rest **********************//
+author="=TSS= zinki";
+OnLoadName = "[TSS] Co6-17 House Clearing";
+OnLoadMission = "Der ewige Kampf gegen die Drogen!";
+loadscreen = "pics\loadscreen.jpg";
+
+briefingName = "[TSS] Co6-17 House Clearing";
+OverViewText = "v0.06 || DC || HC || Parameter!";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 18;
+};
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+class Params
+{
+	class AISkill
+	{
+		title = "AI Skill"; // Param name visible in the list
+		values[] = {0,1,2}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"Easy (half Enemies and no hmg)","regular (half Enemies but perhaps hmgs)", "as intended"}; // Description of each selectable item
+		default = 2; // Default value; must be listed in 'values' array, otherwise 0 is used
+		// Default values that are not whole numbers do not work. Param will default to 0 (or 1 if defined)
+	};
+};

@@ -1,0 +1,28 @@
+author = "[=TSS=] zinki";
+onLoadName = "[=TSS=] Co18 Ohne Namen "; //statt zB. Co08 Co08
+onLoadmission = "Der Hexenkessel von Fallujah";
+onLoadIntro = "[=TSS=] zinki";
+
+briefingName = "[=TSS=] Co18 Ohne Namen";
+overviewText = "v0.00 // DC"; // + weitere Infos
+//loadScreen = "pics\BOB.jpg";
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 19;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

@@ -1,0 +1,1 @@
+diag_log "########### Co 8-10 Entering the mosque ############";

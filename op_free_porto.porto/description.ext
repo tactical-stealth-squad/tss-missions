@@ -1,0 +1,37 @@
+﻿/* Vcom stuff */
+class CfgFunctions
+{
+	#include "Vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers
+{
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
+
+author = "[=TSS=] joker7";
+onLoadName = "[=TSS=] Co06-10 Free Porto"; //statt zB. Co8 Co08
+onLoadmission = "";
+onLoadIntro = "[=TSS=] joker7";
+loadScreen = "images\TSSWallpaper6.jpg"; //Nicht unbedingt notwendig
+overviewText = "0.20 || DC || HC2"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+
+showGPS = 0;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 12;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

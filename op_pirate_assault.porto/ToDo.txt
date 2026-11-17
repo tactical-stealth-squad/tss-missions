@@ -1,0 +1,31 @@
+
+Feedback vom CM 22.03.2021
+++ Lampe Grenadier
+++ Pistolen Lampe?
+oo JEEP Schütze
+++ Vanilla Unterlauf
+oo Wind/Wetter
+++ Schlauchboote löschen 
+++ Boote löschen?!
+++ HALO Punkt verschieben
+oo Heli in Schwarz -> gibts nicht in schwarz
+++ Hirte+Schaafe
+++ Vanilla Boote -> Nussschalen
+?! Explo Loadout checken -> Vllt kommt nochmal Feedback zu
+oo VCOM Einbindung prüfen -> LAMBS reicht
+
+### CM 21.06 ###
+++ Taskpatrol Scriptfehler -> Switch von LAMBS auf CBA (LAMBS verursacht warum auch immer einen Fehler -.-)
+++ Heli auf Haus nebendran + Leiter
+++ HMG nach unten + Leiter fixen 
+++ hideObject bei Zielhaus 
+++ rechten Geldhaufen versetzen -> gelöscht
+++ 3 Boote längs an die Mauer 
+oo ggf. Trigger für Boote rausnehmen -> bleibt
+++ CAMO Netz mal prüfen -> Land_CanvasCover_01_F
+-- Testen ob Supress verringert werden kann 
+++ ggf. Pilot fliegen lassen?! -> Task "colonel töten" fixen
+++ ggf. LKW gegen was "älteres" tauschen -> KAMAZ
+++ Ziegen Modul checken
+00 VCOM ggf. wie bei Zagarabad einbinden?! -> VCOM bleibt draußen
+-- Fail einbauen, wenn der Officer übers Meer fliehen konnte

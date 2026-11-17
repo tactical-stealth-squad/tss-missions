@@ -1,0 +1,16 @@
+### CM 15.11.2021###
+++ Laodouts -> Vanilla Taskforce (Tears of Sun oder Snakehead) -> Briefing anpassen -> gearfields loadouts
+++ Loadouts für CSAT von Gearfield (ggf. Fahrzeuge auch anpassen)
+++ SPG Jeep 
+++ Base etwas überarbeiten
+++ Weg freigeben dafür Checkpoints
+++ Briefing, ACE Medic Einstellung standardisieren
+++ VCOM Updaten und/oder AI-Mod Paramterauswahl
+++ One-Shoot für Ifritt
+++ Aufklärung für Doofe ^^
++o Thermal rausnehmen -> für den einen BMP bleibt es
+++ Getlin Jeeps wieder schwarz machen
+++ Introartiges
+
+### CM 21.11.2021###
+-- Jemanden finden, der die Bilder anpasst

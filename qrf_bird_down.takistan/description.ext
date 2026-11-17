@@ -1,0 +1,25 @@
+author = "=TSS= Brainslush";
+onLoadName = "=TSS= Co8+ QRF Bird Down";
+onLoadmission = "";
+onLoadIntro = "=TSS= Brainslush";
+overviewText = "v02 DC HC1"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 1;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header {
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 14;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

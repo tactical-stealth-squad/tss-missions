@@ -1,0 +1,7 @@
+title = "TSS Units Test"
+author = "Brainslush"
+type = "training"
+tags = ["test"]
+min_players = 1
+max_players = 113
+summary = "Training scenario on Stratis for up to 113 players."

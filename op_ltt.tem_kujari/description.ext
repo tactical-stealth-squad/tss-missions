@@ -1,0 +1,19 @@
+cba_settings_hasSettingsFile = 1;
+
+onLoadName = "OP LTT";
+author = "[FHW] Gearfield";
+OnLoadMission = "Ha'adam she'Ba Tank Ye'na'tzeah - The man in the tank will win.";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 14;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

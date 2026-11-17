@@ -1,0 +1,60 @@
+cba_settings_hasSettingsFile = 1;
+
+author = "[=TSS=] zinki";
+onLoadName = "[=TSS=] Der Hexenkessel";
+onLoadmission = "Who Lives, Who Dies, Who Tells Their Story?";
+onLoadIntro = "[=TSS=] zinki";
+
+briefingName = "[=TSS=] Co13-26 - Der Hexenkessel von Fallujah";
+overviewText = "v0.10 // PARAMETER // HC"; // + weitere Infos
+loadScreen = "img\intro.jpg";
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 27;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+/// Parameter
+class Params
+{
+	class AI_MOD
+	{
+		title = "Hilfskonvoi nach AA-Stellung";
+		texts[] = {"JA","NEIN"};
+		values[] = {0,1};
+		default = 0;
+		file = "scripts\del_konvoi.sqf";
+		isGlobal = 0;
+	};
+
+	class Vehicle
+	{
+		title = "KAT";
+		texts[] = {"JA","NEIN"};
+		values[] = {0,1};
+		default = 1;
+		file = "scripts\KAT.sqf";
+		isGlobal = 0;
+	};
+};

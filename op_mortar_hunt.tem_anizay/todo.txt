@@ -1,0 +1,51 @@
+[x] search clues
+    [x] place objects
+    [x] write script
+[x] test helicopter
+    [x] flir
+    [x] fast rope
+[x] phase one artillery handling
+[x] phase two artillery handling
+[x] market handling
+[x] disable grad civ debugging
+[x] place hc
+[x] sync market waypoints
+[x] set market sniper to high
+[x] change formation market
+[x] set vehicle civs
+[x] test prayer speaker
+[x] set marker at base
+[x] civs market
+[x] reduce civ count
+
+[-] ied first target
+[-] 2nd position vehicle unmount
+[-] support nord kommt nicht
+
+[x] heli helme
+[x] heli cable tie
+[x] heli shovel
+[x] ied keller
+[] merkwürdiger init fehler
+[] nähen im hubschrauber
+[] festgenommene sollten keine aks bekommen und seite wechseln
+[] feuergefecht, bevor man auf dem Markt ist
+[] auf den markt aks zu den leuten
+[] kabelbinder in den heli
+[] channels freigeben
+[] sprache von kombatanten
+
+
+
+["C_Van_01_fuel_F","C_Hatchback_01_F","C_Truck_02_fuel_F","C_Truck_02_covered_F","C_Offroad_01_F","C_SUV_01_F","C_Van_01_transport_F","C_Van_01_box_F"]
+
+
+["CFP_C_AFG_Datsun_Pickup_01", "CFP_C_AFG_Datsun_Pickup_Covered_01", "CFP_C_AFG_Lada_01", "CFP_C_AFG_Skoda_105_L_01", "CFP_C_AFG_Skoda_Octavia_01", "CFP_C_AFG_Zamak_Transport_Covered_01", "CUP_C_TT650_TK_CIV"]
+
+force uvo_main_UVOCZ = false;
+force uvo_main_UVOEast = false;
+force uvo_main_UVOGuer = false;
+force uvo_main_UVORU = false;
+force uvo_main_UVORU_CUP = false;
+
+peer barrels

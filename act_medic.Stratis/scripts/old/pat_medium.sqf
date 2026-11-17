@@ -1,0 +1,11 @@
+_group1=createGroup west;
+"b_survivor_F" createUnit [getmarkerPos "PatientSpawn", _group1,"pat1=this; dostop pat1"];
+[pat1, selectRandom[0,0.3,0.5], "leg_r", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5], "leg_l", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5], "body", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5], "head", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5], "hand_r", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5], "hand_l", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[pat1] call ace_medical_fnc_handleDamage_advancedSetDamage;
+pat1 setUnitPos "DOWN";
+pat1 disableAI "PATH";

@@ -1,0 +1,35 @@
+onLoadName = "The Bomb";
+author = "[FHW] Gearfield";
+OnLoadMission = "basierend auf einer Idee von armed-assault.de";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 10;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+class CfgSounds
+    {
+    sounds[] = {};
+
+    class GEA_siren
+    {
+        name = "GEA_siren";
+        sound[] = {"siren.ogg", 1, 1, 1500};
+        titles[] = {};
+    };
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////
+titleParam1 = "Time";
+valuesParam1[] = {-6, 0, 8, 13};
+defValueParam1 = 0;
+textsParam1[] = {"Morning", "Clear day", "Sundown", "Night"};

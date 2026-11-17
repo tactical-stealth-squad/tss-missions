@@ -1,0 +1,7 @@
+title = "Grenzjäger"
+author = "Gearfield"
+type = "coop"
+tags = []
+min_players = 1
+max_players = 12
+summary = "Findet die nukularen Waffen."

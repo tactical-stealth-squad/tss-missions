@@ -1,0 +1,28 @@
+﻿author = "[=TSS=] MarkusA380 & joker7 changed by zinki";
+onLoadName = "[=TSS=] Co08 Pirate Assault";
+onLoadmission = "Bekämpfen Sie die Piraten auf Porto!";
+loadScreen = "images\loadScreen.jpg";
+
+briefingName = "[=TSS=] Co08 Pirate Assault";
+overviewText = "0.03 || DC || HC || +2 Players";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 11;
+};
+
+// description.ext settings for revive
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;

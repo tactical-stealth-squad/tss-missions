@@ -1,0 +1,48 @@
+﻿class CfgFunctions
+{
+	#include "vcom\cfgFunctions.hpp"
+};
+
+
+class CfgRemoteExec
+{
+	// List of script functions allowed to be sent from client via remoteExec
+	class Functions
+	{
+		mode = 2;
+		jip = 1;
+
+		class vcm_serverask { allowedTargets = 0;jip = 1; };
+		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
+		class SpawnScript { allowedTargets = 0;jip = 1; };
+		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+
+	};
+
+
+};
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+author="Znoop edit by zinki";
+OnLoadName = "[=TSS=] Co10 Cleansweep";
+onLoadMission = "Immer einen Schritt voraus!";
+onLoadIntro = "[=TSS=] Co10 Cleansweep";
+loadScreen = "pics\pic.jpg";
+overviewText = "1.03 // DC";
+//overviewText = "Führen Sie einen Angriff auf FIA besetzte Orte durch! 1V0 BTC, TFAR";
+
+class Header
+{
+	gameType = CooP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 11; //max # of players the mission supports
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

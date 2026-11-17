@@ -1,0 +1,40 @@
+cba_settings_hasSettingsFile = 1;
+
+loadScreen =  "image\intro.jpg";
+author= "Paul G. edit by zinki";
+OnLoadName = "Zerstören Sie die AA Stellungen und finden Sie den UN-General";
+OnLoadMission = "=TSS= Co 16 Monument";
+OnLOadIntro = "=TSS= Co 16 Monument";
+//LoadScreen = "";
+OverViewText = "v1.07 || DC";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 16;
+};
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Musik "Grave" ///
+class CfgSounds
+{
+	sounds[]={};
+
+	class music_intro
+	{
+		name = "music_intro";
+		sound[] = {"\music\music1.ogg", db+1, 1.0};
+		titles[] = {0, ""};
+	};
+};

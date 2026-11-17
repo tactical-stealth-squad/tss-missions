@@ -1,0 +1,21 @@
+Changelog für 1.23:
+++ Mörser aus VCOM nehmen
+++ Flashlight raus (ist an Waffe)
+oo Loadouts checken -> Gearfiled standard? -> Medicmaterial bis auf Saline übernommen
+++ Fliehen-Marker-Task auf Gearfields Wunschmarker wechseln
+
+Changelog für 1.24:
+++ CBA Settings fixed
+
+
++++ CM Feedback 10.10.2022 +++
+00 Briefing -> Wo kann man entfliehen -> steht nach Aufnahme des INTEL Files
+++ Bandagen (normale) rauswerfen (beim Medic)
+00 PAK rein (ist an den diversen Locations)
+++ Fahrzeuge TI nehmen 
+++ Marksmnan Visier (Thermal ohne Thermal?) -> cup_optic_cws_nv_rds
+++ ACE Performance Faktor für Player (und KI?) -> nur Player
+-- Hangar befüllen 
+00 Häuser befüllen 
+++ ACE Einstellungen cookoff bei Fahrzeugen
+++ hideIntel für Tasks richtig einbinden

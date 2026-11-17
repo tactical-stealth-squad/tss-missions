@@ -1,0 +1,11 @@
+CUP_O_RU_Soldier_M_EMR
+CUP_O_RU_Soldier_TL_M_EMR
+CUP_O_RU_Soldier_SL_M_EMR
+CUP_O_RU_Medic_M_EMR
+CUP_O_RU_Soldier_AT_M_EMR
+CUP_O_RU_Soldier_GL_M_EMR
+CUP_O_RU_Soldier_MG_M_EMR
+CUP_O_RU_Officer_M_EMR
+CUP_O_RU_Soldier_Marksman_M_EMR
+
+CUP_O_UAZ_MG_RU

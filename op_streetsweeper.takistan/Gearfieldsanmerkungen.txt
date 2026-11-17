@@ -1,0 +1,49 @@
+Hm. Man könnte überlegen, dass en bissel früher zu machen
+So klassisches Afghanistan Setting irgendwann zwischen 2000 und 2010
+Weil sonst läuft da auch wieder jeder mit Multicam rum
+Zu Hoschis Mission hab ich im Allgemeinen noch en paar Anmerungen.
+Ich guck aber, dass ich heute wieder um 19 Uhr da bin.
+Dann können wir vielleicht noch drüber quatschen
+
+[2:07 PM]
+[FHW] Gearfield:
+	Standartvisier der Briten: cup_optic_susat
+
+[2:13 PM]
+[FHW] Gearfield:
+	https://www.atlanticcouncil.org/blogs/natosource/british-troops-in-afghanistan-to-get-us-commander/
+	Wenn ich hier mal so gucken hatten die keine bis wenige Module an der Waffe. Dann eher sowas wie das LLM-01 oder nur ne Taschenlampe
+	Wobei die Frage ist, ob überhaupt benötigt.
+	Einige schon mit Headset im Helm
+	Schweres und leichtes MG
+
+Wobei 2009 dann schon wieder mit dem NLAW kritisch wird
+Die haben tatsächlich nur 343 am Mann
+List of equipment of the British Army - Wikipedia
+https://en.wikipedia.org/wiki/List_of_equipment_of_the_British_Army
+
+Bei denen haben - auch aktuell - nur der SC und SiC ne Pistole
+Wobei die Westen hier was anderes sagen ... Dann bekommt jeder mit nem Halfter an der Weste auch ne Glock
+Wobei die erst 2013 in Dienst kam
+Reicht denen nicht auch ne AT4 bei der Mission?
+
+[2:36 PM]
+[FHW] Gearfield:
+	Also wenn Setting so um 2009, dann ne Browning für jeden mit Holster
+	Warum bekommt der Explo denn keine Engineer Weste
+	Es fehlt noch en Gruschaschü
+	Ah die hatten vor 2010 gar keinen
+	Achso, wenn pre 2010 dann auch nur die Varianten ohne zusätzlich RIS Schienen und Handgriff
+
+https://en.wikipedia.org/wiki/List_of_equipment_of_the_British_Army
+
+-- AT4
+-- MMG
+++ keine Armored 
+-- browning high power
+-- cup_optic_susat
+-- ohne zusätzlich RIS Schienen und Handgriff - L85A2
+
+
+
+

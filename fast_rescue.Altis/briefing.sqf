@@ -1,0 +1,6 @@
+
+player createDiaryRecord [
+    "Diary", [
+        "Equipment", ""
+    ]
+]

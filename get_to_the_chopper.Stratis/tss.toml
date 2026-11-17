@@ -1,0 +1,7 @@
+title = "Get to the Chopper"
+author = "Para-Medic, zinki"
+type = "coop"
+tags = ["night"]
+min_players = 1
+max_players = 11
+summary = "Stehlen Sie den Heli!"

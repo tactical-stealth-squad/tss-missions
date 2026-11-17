@@ -1,0 +1,63 @@
+cba_settings_hasSettingsFile = 1;
+
+// VCOM Begin
+allowFunctionsRecompile = 1;
+
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+
+};
+
+class Extended_PreInit_EventHandlers {
+    VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+class CfgFunctions
+{
+    #include "vcom\cfgFunctions.hpp"
+};
+// VCOM End
+
+
+author = "Moerderhoschi edit by zinki";
+onLoadName = "[=TSS=] Co12 OP Streetsweeper"; //statt zB. Co8 Co08
+onLoadmission = "Ein ganz normaler Tag ...";
+loadScreen = "images\loadscreen.jpg"; //Nicht unbedingt notwendig
+
+briefingName = "[=TSS=] Co12 OP Streetsweeper";
+overviewText = "0.02 || DC || HC"; // + weitere Infos
+
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 13;
+};
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;

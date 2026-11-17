@@ -1,0 +1,26 @@
+author = "=TSS= Alcatron/ joker7";
+onLoadName = "=TSS= ACT Medic I/ II/ III"; //statt zB. Co8 Co08
+onLoadmission = "Medic-Ausbildung"; //statt zB. Co8 Co08
+onLoadIntro = "=TSS= ACT Medic I/ II/ III";
+overviewText = "1.40" // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 0;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+   gameType = COOP;
+   minPlayers = 1;
+   maxPlayers = 35;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};

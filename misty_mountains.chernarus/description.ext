@@ -1,0 +1,76 @@
+cba_settings_hasSettingsFile = 1;
+
+// VCOM Begin
+allowFunctionsRecompile = 1;
+
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+
+};
+
+class Extended_PreInit_EventHandlers {
+    VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+class CfgFunctions
+{
+    #include "vcom\cfgFunctions.hpp"
+};
+
+// VCOM End
+author="zinki & [FHW] Gearfield";
+OnLoadName = "[=TSS=] Co08 Misty Mountains";
+OnLoadMission = "Finden und zerstören Sie die feindliche AA-Stellung!";
+loadscreen = "img\screen.jpg";
+
+briefingName = "[=TSS=] Co08 Misty Mountains";
+OverViewText = "v1.06 || DC || NO HC! || +2 players";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 11;
+};
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+class CfgMusic
+{
+    tracks[] = {};
+    class MyIntro
+    {
+        // display name
+        name    = "Misty Mountains";
+
+        // filename, volume, pitch
+        sound[] = { "\music\intro_MistyM_short.ogg", db + 0, 1.0 };
+    };
+};

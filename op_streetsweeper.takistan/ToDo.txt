@@ -1,0 +1,56 @@
+###Release Version###
+++ Loadouts checken lassen
+++ Trigger wenn alle tot sind
+++ Addaction Missionsbeenden
+o- Briefing - Lage - schreiben -> Marker einbinden
+++ Tasks.sqf vernüftig schreiben
+++ Civis tauschen
+++ 8 Mann Pat kleiner 
+++ keine gepanzerten Gegner
+++ Setting auf 2009 wechseln
+++ zu sprengende Objekte prüfen // ggf. Sprengmittel in der Nähe plazieren
+oo große Remote Charges können nicht aufgenommen werden. -> kleine sollten reichen!
+++ Rauch Unterlauf in die Boxen/Fahrzeuge
+++ Fahrzeuge Med Fahrzeuge ... nähen am Vehicle ... oder San Civ einbauen
+-- Kurztest Server + Trigger
+
+Loadouts:
+++ AT4 statt NLAW
+++ MMG
+++ browning high power -> nur bei Holster
+++ Standartvisier der Briten: cup_optic_susat
+++ ohne zusätzlich RIS Schienen und Handgriff - L85A2
+++ keine Module an Waffe
+oo teils Headset im Helm (prüfen) -> Leads und Medics
+oo ggf. nur 343?! -> Lead 148 und 343
+oo AT hat die Medic Weste -> Medic Weste ist die einzige, die nicht so viel bugged
+++ Sparebarrel in die Fahrzeuge + Ammo Box
+
+
+
+TK_WarfareBBarracks_Base_EP1
+Sieht halt anders aus
+Achso und insbesondere so Türme auf Sea Normal stellen.
+Sonst sieht das aus wie der schiefe Turm von Pisa
+Und den Generator vielleicht noch gegen: US_WarfareBUAVterminal_Base_EP1
+
+
+###Feedback CM 31.05.2021###
+++ Rechtschreibfehler -> Prüfung durch MAC
+++ Medkiste einladen
+++ KI Loadout ändern
+++ IED einbauen
+-- Wolkenfehler?! -> noch auf Server prüfen!
+++ Feind andere AKs geben 
+++ Jackal HMG!
+++ GPS für Lead
+++ Mine Dedektor
+++ Schönere Sandsackbarake -> TK_WarfareBBarracks_Base_EP1
+++ anderer Generator -> US_WarfareBUAVterminal_Base_EP1
+++ Funkantenne sea level
+++ description in der Slotliste falsch
+++ Slotliste / Slots neu ordnen
++o Civis ggf rework -> allow fleeing -> Agents sind geblieben - paar Civis in den Feindgebieten rausgenommen
+
+
+

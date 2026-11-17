@@ -1,0 +1,7 @@
+title = "Zeus (Altis)"
+author = "Brainslush"
+type = "zeus"
+tags = ["zeus"]
+min_players = 1
+max_players = 181
+summary = "Zeus-run mission on Altis for up to 181 players."

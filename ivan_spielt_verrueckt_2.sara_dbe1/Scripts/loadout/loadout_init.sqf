@@ -1,0 +1,76 @@
+private ["_unit", "_klasse"];
+_unit = _this select 0;
+
+_klasse = vehicleVarName _unit;
+
+switch (_klasse) do {
+    case "s1": {
+        /// Zugführer
+        _unit setUnitLoadout [["CUP_arifle_G36K_RIS_AG36_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],["CUP_1Rnd_HEDP_M203",1],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_DAGR",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17]]],["CUP_V_B_GER_PVest_Fleck_Gren_LT",[["ACE_HuntIR_monitor",1],["ACE_DAGR",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",4,30],["SmokeShell",2,1],["SmokeShellPurple",2,1],["ACE_HuntIR_M203",5,1]]],["CUP_B_GER_Backpack_GL_Fleck",[["ACRE_PRC117F",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",8,30],["CUP_1Rnd_HEDP_M203",10,1]]],"CUP_H_Ger_M92_Cover_GG","CUP_G_PMC_Facewrap_Tropical_Glasses_Dark",["ACE_VectorDay","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+    case "s2": {
+        /// Stellv. / Nahsicherung
+        _unit setUnitLoadout [["CUP_arifle_MG36_holo","","CUP_acc_Flashlight_wdl","CUP_optic_TrijiconRx01_black",["CUP_100Rnd_556x45_BetaCMag",100],[],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_5",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["ACE_MapTools",1],["CUP_17Rnd_9x19_glock17",2,17],["SmokeShell",2,1],["SmokeShellPurple",1,1]]],["CUP_V_B_GER_PVest_Fleck_MG_LT",[["ACRE_PRC148",1],["SmokeShell",2,1],["CUP_HandGrenade_M67",2,1],["SmokeShellPurple",2,1],["CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_wdl",1,100]]],["CUP_B_GER_Pack_Flecktarn",[["ACRE_PRC117F",1],["CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_wdl",3,100]]],"CUP_H_Ger_M92_Cover_GG_CF","CUP_PMC_Facewrap_Tropical",["ACE_VectorDay","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+
+    };
+    case "s3": {
+        /// Gruppenführer
+        _unit setUnitLoadout [["CUP_arifle_G36K_RIS_AG36_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],["CUP_1Rnd_HEDP_M203",1],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_DAGR",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17]]],["CUP_V_B_GER_PVest_Fleck_Gren_LT",[["ACE_HuntIR_monitor",1],["ACE_DAGR",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",4,30],["SmokeShell",2,1],["SmokeShellPurple",2,1],["ACE_HuntIR_M203",5,1]]],["CUP_B_GER_Backpack_GL_Fleck",[["ACRE_PRC117F",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",8,30],["CUP_1Rnd_HEDP_M203",10,1]]],"CUP_H_Ger_M92_Cover_GG","CUP_G_PMC_Facewrap_Tropical_Glasses_Dark",["ACE_VectorDay","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+
+    };
+    case "s4": {
+        /// Stellv. Grpf
+        _unit setUnitLoadout [["CUP_arifle_G36K_RIS_AG36_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],["CUP_1Rnd_HEDP_M203",1],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_DAGR",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17]]],["CUP_V_B_GER_PVest_Fleck_Gren_LT",[["ACE_HuntIR_monitor",1],["ACE_DAGR",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",4,30],["SmokeShell",2,1],["SmokeShellPurple",2,1],["ACE_HuntIR_M203",5,1]]],["CUP_B_GER_Backpack_GL_Fleck",[["ACRE_PRC117F",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",8,30],["CUP_1Rnd_HEDP_M203",10,1]]],"CUP_H_Ger_M92_Cover_GG","CUP_G_PMC_Facewrap_Tropical_Glasses_Dark",["ACE_VectorDay","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+
+    };
+    case "s5": {
+       /// LMG
+        _unit setUnitLoadout [["CUP_arifle_MG36_holo","","CUP_acc_Flashlight_wdl","CUP_optic_TrijiconRx01_black",["CUP_100Rnd_556x45_BetaCMag",100],[],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_5",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["ACE_MapTools",1],["CUP_17Rnd_9x19_glock17",2,17],["SmokeShell",2,1],["SmokeShellPurple",1,1]]],["CUP_V_B_GER_PVest_Fleck_MG_LT",[["SmokeShell",2,1],["CUP_HandGrenade_M67",2,1],["SmokeShellPurple",2,1],["CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_wdl",1,100]]],["CUP_B_GER_Pack_Flecktarn",[["CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_wdl",6,100]]],"CUP_H_Ger_M92_Cover_GG_CF","CUP_PMC_Facewrap_Tropical",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+    case "s6": {
+        /// AT
+        _unit setUnitLoadout [["CUP_arifle_G36A_RIS_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],[],""],["launch_MRAWS_green_rail_F","","","",["MRAWS_HEAT_F",1],[],""],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17],["SmokeShellPurple",1,1],["SmokeShell",2,1]]],["CUP_V_B_GER_PVest_Fleck_RFL_LT",[["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl",8,30],["SmokeShellPurple",2,1],["SmokeShell",2,1]]],["CUP_B_GER_Backpack_AT_Fleck",[["CUP_MAAWS_HEDP_M",1,1],["CUP_MAAWS_HEAT_M",1,1],["MRAWS_HEAT_F",1,1]]],"CUP_H_Ger_M92_Cover_GG_CB","CUP_PMC_Facewrap_Black",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+    case "s7": {
+        /// AT Assi
+        _unit setUnitLoadout [["CUP_arifle_G36K_RIS_AG36_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],[],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_morphine",2],["ACE_MapTools",1],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17],["SmokeShellPurple",1,1],["SmokeShell",2,1]]],["CUP_V_B_GER_PVest_Fleck_Gren_LT",[["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl",6,30],["CUP_1Rnd_HEDP_M203",10,1],["SmokeShell",1,1],["SmokeShellPurple",1,1]]],["CUP_B_GER_Backpack_GL_Fleck",[["MRAWS_HEAT_F",3,1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",6,30],["CUP_1Rnd_HEDP_M203",5,1]]],"CUP_H_Ger_M92_Cover_GG","CUP_G_PMC_Facewrap_Tropical_Glasses_Dark",["ACE_VectorDay","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+    case "s8": {
+        /// MG 3
+        _unit setUnitLoadout [["CUP_lmg_MG3","","","",["CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",120],[],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_2",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17],["SmokeShell",2,1],["SmokeShellPurple",1,1]]],["CUP_V_B_GER_PVest_Fleck_MG_LT",[["CUP_120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M",1,120]]],["CUP_B_GER_Backpack_MG3_Fleck",[["ACE_SpareBarrel",1,1],["CUP_120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M",2,120]]],"CUP_H_Ger_M92_Cover_GG_CB","CUP_G_Oakleys_Drk",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+
+    case "s9": {
+        /// GL / MG 3 Assi
+        _unit setUnitLoadout [["CUP_arifle_G36K_RIS_AG36_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],["CUP_1Rnd_HEDP_M203",1],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_DAGR",1],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17]]],["CUP_V_B_GER_PVest_Fleck_Gren_LT",[["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo",8,30],["SmokeShellPurple",2,1],["SmokeShell",4,1]]],["CUP_B_GER_Backpack_MG3_Fleck",[["CUP_1200Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M",2,1200],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl",6,30],["CUP_1Rnd_HEDP_M203",20,1]]],"CUP_H_Ger_M92_Cover_GG","CUP_G_PMC_Facewrap_Tropical_Glasses_Dark",["ACE_VectorDay","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+
+    case "s10": {
+        /// Demo
+        _unit setUnitLoadout [["CUP_arifle_G36A_RIS_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],[],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_DefusalKit",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_M26_Clacker",1],["ACE_MapTools",1],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17],["SmokeShell",1,1]]],["CUP_V_B_GER_PVest_Fleck_RFL_LT",[["SmokeShell",2,1],["SmokeShellPurple",2,1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl",8,30]]],["CUP_B_GER_Backpack_Engineer_Fleck",[["ACE_EntrenchingTool",1],["SatchelCharge_Remote_Mag",2,1],["DemoCharge_Remote_Mag",4,1]]],"CUP_H_Ger_M92_Cover","CUP_G_Oakleys_Drk",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+
+    case "s11": {
+        /// Crew Lead
+        _unit setUnitLoadout [["CUP_smg_MP7_zeiss","","CUP_acc_Flashlight_wdl","CUP_optic_ZeissZPoint",["CUP_40Rnd_46x30_MP7",40],[],""],[],["CUP_hgun_Glock17","","","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Fleck_Overalls_Tank",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_DAGR",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",1,17],["CUP_40Rnd_46x30_MP7",2,40],["SmokeShell",1,1],["SmokeShellPurple",1,1]]],[],[],"CUP_H_Ger_Beret_TankCommander_Grn","",["ACE_VectorDay","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    };
+
+    case "s18": {
+        /// Medic Lead
+        _unit setUnitLoadout [["CUP_arifle_G36A_RIS_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],[],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_DAGR",1],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17]]],["CUP_V_B_GER_PVest_Fleck_Gren_LT",[["ACE_surgicalKit",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl",6,30],["SmokeShell",4,1],["SmokeShellPurple",4,1]]],["CUP_B_GER_Backpack_GL_Fleck",[["ACE_adenosine",20],["ACRE_PRC117F",1],["ACE_elasticBandage",20],["ACE_quikclot",20],["ACE_bodyBag",2],["ACE_epinephrine",20],["ACE_morphine",20],["ACE_packingBandage",20],["ACE_tourniquet",5],["ACE_salineIV_500",4]]],"CUP_H_Ger_M92_Cover_GG","CUP_G_PMC_Facewrap_Tropical_Glasses_Dark",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]];
+        _unit setVariable ["ace_medical_medicClass", 2, true]
+    };
+
+    case "s19": {
+        /// Medic
+        _unit setUnitLoadout [["CUP_arifle_G36A_RIS_wdl","","CUP_acc_Flashlight_wdl","CUP_optic_ACOG_Reflex_Wood",["CUP_30Rnd_556x45_G36_wdl",30],[],""],[],["CUP_hgun_glock17_flashlight","","CUP_acc_Glock17_Flashlight","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Flecktarn_6",[["ACE_splint",2],["ACE_adenosine",2],["ACRE_PRC148",1],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_epinephrine",2],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_17Rnd_9x19_glock17",2,17]]],["CUP_V_B_GER_PVest_Fleck_Gren_LT",[["ACE_surgicalKit",1],["CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl",6,30],["SmokeShell",4,1],["SmokeShellPurple",4,1]]],["CUP_B_GER_Backpack_GL_Fleck",[["ACE_adenosine",20],["ACE_elasticBandage",25],["ACE_quikclot",25],["ACE_bodyBag",5],["ACE_epinephrine",20],["ACE_morphine",20],["ACE_packingBandage",25],["ACE_tourniquet",5],["ACE_salineIV_500",8],["ACE_salineIV",2],["ACE_personalAidKit",2]]],"CUP_H_Ger_M92_Cover_GG","CUP_G_PMC_Facewrap_Tropical_Glasses_Dark",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]];
+        _unit setVariable ["ace_medical_medicClass", 2, true]
+    };
+
+    case default {
+        /// Crew
+        _unit setUnitLoadout [["CUP_smg_MP7_zeiss","","CUP_acc_Flashlight_wdl","CUP_optic_ZeissZPoint",["CUP_40Rnd_46x30_MP7",40],[],""],[],["CUP_hgun_Glock17","","","",["CUP_17Rnd_9x19_glock17",17],[],""],["CUP_U_B_GER_Fleck_Overalls_Tank",[["ACE_splint",2],["ACRE_PRC148",1],["ACE_adenosine",2],["ACE_elasticBandage",5],["ACE_quikclot",5],["ACE_CableTie",1],["ACE_EarPlugs",1],["ACE_DAGR",1],["ACE_epinephrine",2],["ACE_MapTools",1],["ACE_morphine",2],["ACE_packingBandage",5],["ACE_tourniquet",2],["CUP_40Rnd_46x30_MP7",2,40],["CUP_17Rnd_9x19_glock17",1,17],["SmokeShell",1,1],["SmokeShellPurple",1,1]]],[],[],"H_HelmetCrew_I","",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
+    }
+};
+
+nil

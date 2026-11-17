@@ -1,0 +1,77 @@
+cba_settings_hasSettingsFile = 1;
+
+// VCOM Begin
+allowFunctionsRecompile = 1;
+
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+
+};
+
+class Extended_PreInit_EventHandlers {
+    VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+class CfgFunctions
+{
+    #include "vcom\cfgFunctions.hpp"
+};
+// VCOM End
+
+author="zinki";
+OnLoadName = "[=TSS=] Co12-15 Rebell Yell";
+OnLoadMission = "Finden und bergen Sie die BM-21!";
+loadscreen = "img\screen.jpg";
+
+briefingName = "[=TSS=] Co12 Rebell Yell";
+OverViewText = "V0.05 || Parameter || NO HC";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 16;
+};
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+/// Parameter
+class Params
+{
+    class Vehicle
+    {
+        title = "Vehicle";
+        texts[] = {"BMP-2","BTR-60"};
+        values[] = {0,1};
+        default = 1;
+        file = "scripts\Vehicle.sqf";
+        isGlobal = 0;
+    };
+};

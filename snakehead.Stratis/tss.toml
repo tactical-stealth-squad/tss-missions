@@ -1,0 +1,7 @@
+title = "Snakehead"
+author = "NemesisoD, Brainslush, zinki"
+type = "coop"
+tags = ["night", "fog"]
+min_players = 1
+max_players = 10
+summary = "Infiltiere die Stadt ohne die Feinde zu alamieren und lege einen Hinterhalt für den Kommandeur."

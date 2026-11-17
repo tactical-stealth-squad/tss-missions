@@ -1,0 +1,56 @@
+author = "[=TSS=] joker7";
+onLoadName = "[=TSS=] Hearts and Minds"; //statt zB. Co08 Co08
+onLoadmission = "";
+onLoadIntro = "[=TSS=] joker7";
+loadScreen = "images\TSSWallpaper6.jpg"; //Nicht unbedingt notwendig
+overviewText = "0.10 // E"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 0;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 40;
+};
+
+respawn = "BASE";
+respawndelay = 3;
+respawnTemplates[] = {"MenuPosition"};
+
+
+/* Vcom stuff */
+class CfgFunctions
+{
+	#include "Vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers 
+{
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
+
+class CfgSounds
+{
+	// Definition for each sound
+	class expozie
+	{
+		name = "expozie"; // Name for mission editor
+		sound[] = {\sound\expozie.ogg, db+20, 1.0};
+		titles[] = {0, ""};	
+	};
+	class ground_air
+	{
+		name = "ground_air"; // Name for mission editor
+		sound[] = {\sound\ground_air.ogg, db+15, 1.0};
+		titles[] = {0, ""};	
+	};
+};

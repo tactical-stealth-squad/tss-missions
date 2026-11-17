@@ -1,0 +1,7 @@
+title = "Rebell Yell"
+author = "zinki"
+type = "coop"
+tags = ["winter", "rain"]
+min_players = 12
+max_players = 15
+summary = "Finden und bergen Sie die BM-21!"

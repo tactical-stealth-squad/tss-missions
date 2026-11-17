@@ -1,0 +1,43 @@
++ set civilians non lambs
++ set pilots unconcious 
++ last spawn is not synced
++ spg9 jeep 
++ start helicopter server only script
++ motorrad ow bewegt sich nicht 
++ ein civi bewegt sich nicht
++ briefing hinzufügen
++ medic settings und loadout
++ at4s für diverese
++ piloten nicht dauerhaft ohnmächtig
++ Spotter näher an die Kante
++ motorad ow ohne motorrad
++ piloten verletzen, wenn näherung
++ gruppe am heli bewegt sich nicht
++ spotter früher los
++ sniper bush
++ force position up
++ init scripte in die server init
++ spotter fliehen, wenn units zu nahe kommen
+- mission end script
++ make spotter flee
++ place HC?
++ place zeus
++ zivi sued macht mist
++ at static verschieben?
++ bush 2 in die mitte der beiden buesche
++ cqb sued nord wird nicht getriggert
++ jeep huegel weiter nach ost
++ 2ter pilot hat keinen schaden bekommen
++ 1ter pilot koennte einen ticken mehr schaden haben
++ letzten at weg
+- ied spawn script?
+- spotter bewegt sich
++ intro
+- heli explodiert nicht
+- pilot war nicht mehr da
+- at4 assi keine muni
+- mehr muni für alle
+- scharfschützen etwas zu genau
+- munitions kaliber etwas zu niedrig
+
+zu statisch

@@ -1,0 +1,10 @@
+Feedback aus CM 17.05.2021:
+++ Script für APC one-kill
+++ Loadouts anpassen
+++ komplette Nacht (Missionsstart 23 Uhr)
+-- ggf. briefing anpassen -> Leider keine Erinnerung mehr, warum ich das aufgenommen habe ... 
+++ Thermal für APC raus
+oo APC ggf ohne LAMBS sondern nur Vanilla?! -> bleibt Lambs
+++ Jeeps weiter weg stellen -> ggf. Hafen
+oo VCOM Einbindung prüfen -> Funktioniert aufgrund Hackingscript nicht. 
+o+ Loadouts prüfen - Gearfield Standard? -> Soweit Vanilla dies zuließ 

@@ -1,0 +1,45 @@
+cba_settings_hasSettingsFile = 1;
+
+author="zinki";
+OnLoadName = "=TSS= Co8 Rescue Ivan";
+OnLoadMission = "Befreien Sie die Geisel!";
+loadscreen = "image\screen.jpg";
+
+briefingName = "=TSS= Co8 Rescue Ivan";
+OverViewText = "v0.10 || DC || NO HC! || Paramter!";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 11;
+};
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+/// Intro Musik ///
+class CfgMusic
+{
+	tracks[]={};
+
+	class music_intro
+	{
+		name = "music_intro";
+		sound[] = {"\music\intro_ghost_recon.ogg", db+10, 1.0};
+	};
+};

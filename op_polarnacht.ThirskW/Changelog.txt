@@ -1,0 +1,18 @@
+Changelog für 0.03:
+oo VCOM Einbindung prüfen -> bleibt Vanilla ohne AI Mod
++o Loadouts prüfen - Gearfield Standard? -> zum Teil angepasst
+
+### Gearfield 03012021 ###
+00 Bei mir regnets da nämlich immer. -> Regen war schon vorher aus, damit Missionsname Sinn ergibt
+++ Die Version der Polarnacht, die Du mir hochgeladen hast, hat auf jeden Fall nur 8 Slots
+++ Da steht auch immer noch KSK Operation
+++ Und die Kiste mit BW Zeug
+++ UGL des ersten Slots ist nicht geladen
+00 Der BMP fährt gerade den halben Wald kaputt -> KI macht was KI nun mal will ... 
+++ KI ignoriert den Damm und geht bei frostigen Temperaturen lieber baden -> statisch
+++ CUP_B_AssaultPack_Coyote
+
+
+### 05012021 bei ASG ###
+-- Ausdauer
+-- Radar mit Boden drunter

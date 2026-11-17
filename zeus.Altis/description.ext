@@ -1,0 +1,168 @@
+author = "=TSS= Brainslush";
+onLoadName = "=TSS= CoXX Zeus"; //statt zB. Co8 Co08
+onLoadmission = "=TSS= CoXX Zeus"; //statt zB. Co8 Co08
+onLoadIntro = "=TSS= Brainslush";
+//loadScreen = "<bildname>.jpg"; //Nicht unbedingt notwendig
+overviewText = "v10 DC HC1"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 0;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header {
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 56;
+};
+
+respawn = "BASE";
+respawndelay = 3;
+respawnTemplates[] = {"ace_spectator"};
+
+class Params {
+	//#include "\a3\functions_f\Params\paramCountdown.hpp"
+	#ifndef COUNTDOWN_MIN
+		#define COUNTDOWN_MIN	600
+	#endif
+	#ifndef COUNTDOWN_MAX
+		#define COUNTDOWN_MAX	3600
+	#endif
+	#ifndef COUNTDOWN_DEFAULT
+		#define COUNTDOWN_DEFAULT	-1
+	#endif
+
+	__EXEC(_countdownStep = COUNTDOWN_MAX * 0.1 - COUNTDOWN_MIN * 0.1;)
+	__EXEC(_countdown0 = COUNTDOWN_MIN + 0 * _countdownStep;)
+	__EXEC(_countdown1 = COUNTDOWN_MIN + 1 * _countdownStep;)
+	__EXEC(_countdown2 = COUNTDOWN_MIN + 2 * _countdownStep;)
+	__EXEC(_countdown3 = COUNTDOWN_MIN + 3 * _countdownStep;)
+	__EXEC(_countdown4 = COUNTDOWN_MIN + 4 * _countdownStep;)
+	__EXEC(_countdown5 = COUNTDOWN_MIN + 5 * _countdownStep;)
+	__EXEC(_countdown6 = COUNTDOWN_MIN + 6 * _countdownStep;)
+	__EXEC(_countdown7 = COUNTDOWN_MIN + 7 * _countdownStep;)
+	__EXEC(_countdown8 = COUNTDOWN_MIN + 8 * _countdownStep;)
+	__EXEC(_countdown9 = COUNTDOWN_MIN + 9 * _countdownStep;)
+	__EXEC(_countdown10 = COUNTDOWN_MIN + 10 * _countdownStep;)
+	__EXEC(_countdownFunction = uinamespace getvariable "bis_fnc_timeToString";)
+
+	class Countdown
+	{
+		title = $STR_A3_paramCountdown_title;
+		values[] = {
+			-1,
+			__EVAL(_countdown0),
+			__EVAL(_countdown1),
+			__EVAL(_countdown2),
+			__EVAL(_countdown3),
+			__EVAL(_countdown4),
+			__EVAL(_countdown5),
+			__EVAL(_countdown6),
+			__EVAL(_countdown7),
+			__EVAL(_countdown8),
+			__EVAL(_countdown9),
+			__EVAL(_countdown10)
+		};
+		texts[] = {
+			$STR_DISABLED,
+			__EVAL([_countdown0 / 3600] call _countdownFunction),
+			__EVAL([_countdown1 / 3600] call _countdownFunction),
+			__EVAL([_countdown2 / 3600] call _countdownFunction),
+			__EVAL([_countdown3 / 3600] call _countdownFunction),
+			__EVAL([_countdown4 / 3600] call _countdownFunction),
+			__EVAL([_countdown5 / 3600] call _countdownFunction),
+			__EVAL([_countdown6 / 3600] call _countdownFunction),
+			__EVAL([_countdown7 / 3600] call _countdownFunction),
+			__EVAL([_countdown8 / 3600] call _countdownFunction),
+			__EVAL([_countdown9 / 3600] call _countdownFunction),
+			__EVAL([_countdown10 / 3600] call _countdownFunction)
+		};
+		default = COUNTDOWN_DEFAULT;
+		function = "BIS_fnc_paramCountdown";
+	};
+
+
+	//#include "\a3\functions_f\Params\paramDaytimeHour.hpp"
+	#ifndef DAYTIMEHOUR_DEFAULT
+		#define DAYTIMEHOUR_DEFAULT	5
+	#endif
+
+	class Daytime
+	{
+		title = $STR_a3_cfgvehicles_moduledate_f_arguments_hour_0;
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
+		texts[] = {"00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"};
+		default = DAYTIMEHOUR_DEFAULT;
+		function = "BIS_fnc_paramDaytime";
+	};
+
+
+	//#include "\a3\functions_f\Params\paramGuerFriendly.hpp"
+	#ifndef GUERFRIENDLY_DEFAULT
+		#define GUERFRIENDLY_DEFAULT	-1
+	#endif
+
+	class GuerFriendly
+	{
+		title = $STR_DISP_INTEL_EDIT_GUERILLA;
+		values[] = {-1,1,0,2};
+		texts[] = {
+			$STR_DISP_INTEL_NONE_FRIENDLY,
+			$STR_DISP_INTEL_WEST_FRIENDLY,
+			$STR_DISP_INTEL_EAST_FRIENDLY,
+			$STR_DISP_INTEL_BOTH_FRIENDLY
+		};
+		default = GUERFRIENDLY_DEFAULT;
+		function = "BIS_fnc_paramGuerFriendly";
+	};
+
+
+	//#include "\a3\functions_f\Params\paramWeather.hpp"
+	#ifndef WEATHER_DEFAULT
+		#define WEATHER_DEFAULT	25
+	#endif
+
+	class Weather
+	{
+		title = $STR_A3_rscattributeovercast_title;
+		values[] = {0,25,50,75,100};
+		texts[] = {
+			$STR_A3_rscattributeovercast_value000_tooltip,
+			$STR_A3_rscattributeovercast_value025_tooltip,
+			$STR_A3_rscattributeovercast_value050_tooltip,
+			$STR_A3_rscattributeovercast_value075_tooltip,
+			$STR_A3_rscattributeovercast_value100_tooltip
+		};
+		default = WEATHER_DEFAULT;
+		function = "BIS_fnc_paramWeather";
+	};
+};
+
+class CfgFunctions {
+    #include "vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers {
+    class VCM_CBASettings {
+        init = "call VCM_fnc_CBA_Settings";
+    };
+};
+class CfgRemoteExec {
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+};

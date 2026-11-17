@@ -1,0 +1,64 @@
+author = "=TSS= Brainslush";
+onLoadName = "=TSS= Co8+ Contract Golden Snatch";
+onLoadmission = "Dead or Alive";
+onLoadIntro = "=TSS= Brainslush";
+//loadScreen = "<bildname>.jpg"; //Nicht unbedingt notwendig
+overviewText = "v03 DC HC1"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 1;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header {
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 56;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+class CfgSounds {
+    sounds[] = {};
+    class MorningPrayer {
+        name = "morning_prayer";
+        sound[] = {"audio\prayer.ogg", 4, 1};
+        titles[] = {};
+    };
+};
+
+
+/* VCOM */
+allowFunctionsRecompile = 1;
+
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        mode = 2;
+        jip = 1;		
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };	
+    };
+};
+
+class Extended_PreInit_EventHandlers {
+    VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+class CfgFunctions 
+{
+    #include "vcom\cfgFunctions.hpp"
+};
+

@@ -1,0 +1,45 @@
+author = "=TSS= Brainslush";
+onLoadName = "=TSS= Co8+ OP Mortar Hunt";
+onLoadmission = "Hunt them";
+onLoadIntro = "=TSS= Brainslush";
+//loadScreen = "<bildname>.jpg"; //Nicht unbedingt notwendig
+overviewText = "v05 DC HC1"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 1;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header {
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 56;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+class CfgSounds {
+    sounds[] = {};
+    class MorningPrayer {
+        name = "morning_prayer";
+        sound[] = {"audio\prayer.ogg", 4, 1};
+        titles[] = {};
+    };
+    class WarnIncomming {
+        name = "warnincomming";
+        sound[] = {"audio\warn_incomming.ogg", 4, 1};
+        titles[] = {};
+    };
+    class WarnYellow {
+        name = "warnyellow";
+        sound[] = {"audio\warn_yellow.ogg", 4, 1};
+        titles[] = {};
+    };
+};

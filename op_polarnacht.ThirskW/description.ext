@@ -1,0 +1,66 @@
+cba_settings_hasSettingsFile = 1;
+
+author="NIK edit by zinki";
+OnLoadName = "Co08 Operation Polarnacht";
+OnLoadMission = "Finden und zerstören Sie die Flugabwehrstellungen!";
+loadscreen = "Bilder\bild.jpg";
+
+briefingName = "[2010](W) Co08 Operation Polarnacht";
+OverViewText = "v0.06 || DC || +2 players";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 11;
+};
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+class CfgMusic
+{
+	tracks[] = {};
+
+	class Atrocities
+	{
+		name = "Atrocities";
+		sound[] = {\music\Atrocities.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+
+	class Short01_Defcon_Three
+	{
+		name = "Short01_Defcon_Three";
+		sound[] = {\music\Short01_Defcon_Three.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};
+
+/// Parameter
+class Params
+{
+	class Vehicle
+	{
+		title = "KAT";
+		texts[] = {"JA","NEIN"};
+		values[] = {0,1};
+		default = 1;
+		file = "scripte\KAT.sqf";
+		isGlobal = 0;
+	};
+};

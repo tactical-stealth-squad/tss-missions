@@ -1,0 +1,37 @@
+###Feedback vom 10.05 und eigenes###
+++ Briefing: Warum der von dreien Funkturm? 
+++ Briefing: Kurze Begründung, dass bei gestörter Funkverbindung trotz Feuergefecht kein Support kommt -> Gefechtsübungen immer wieder auf der Insel 
+++ HuntIR für Aufklärung
+oo Wetter -> Weicherer Nebel + Briefing eintrag -> bleibt
+oo Sound fürs Hacking bisschen leiser -> Spielerabhängig daher bleibt
+++ Minigun statt ATV oder mit ins Script aufnehmen?!
+++ disable Thermal 
+oo disableAI "Path" für Rhino?! -> bleibt AI gesteuert
+++ AT in ATV am Funkturm packen?!
++o Minen für den Explo?! -> einer hat eine AT-Mine bekommen
+-o Task System -> Erstmal ohne 
+oo Leuchtturm rausnehmen?! -> bleibt
+oo Heli gegen Gosthawk tauschen -> vllt iwann mal ^^
+
+
+###Feedback vom 14.06 und eigenes###
+++ Name im Intro
+++ Rechtschreibung: "vorläufige Aufklärung" -> mehrere
+o- METIS putt?? -> Putt bei Nacht -> Aufnehmen in Briefing
+++ Base Pat nur 2 Mann stark
+++ kein NVG für Base Pat
+o- CRAM prüfen -> Schießt nicht auf Inf -.- ... danke BI 
+++ Visier prüfen -> hammer
+
+
+### Feedback vom 14.02.2022 ###
+++ angebrochene Pistolen-Magazine
+o+ One Shoot für MATV -> für alle mit Waffenaufbau
+o- ACE Visiere statt Vanilla -> kann man leider für Vanilla AKs nicht auswählen. 
+o- HMGs auf Türmen gegen Schützen austauschen? (Rest stehen lassen) -> ein HMG getauscht, zwei HMG übrig, die jeweils in andere Richtungen zeigen. 
+
+
+### Feedback vom 28.08.2023 ###
+-- Briefing CRAM und SAM wo sie stehen
+-- Ggf. DMR einbauen
+-- A10 / Reinf anders regeln (das A10 net einfach kommt)

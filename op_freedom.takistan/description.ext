@@ -1,0 +1,38 @@
+cba_settings_hasSettingsFile = 1;
+
+author = "=TSS= Maxx - changed by zinki & Joker";
+onLoadName = "[=TSS=] Co02-10 OP Freedom";
+onLoadmission = "Was man mit Gewalt gewinnt, kann man nur mit Gewalt behalten.";
+loadScreen = "bilder\army.jpg";
+
+briefingName = "[=TSS=] Co02-10 OP Freedom";
+overviewText = "0.18 || DC || HC";
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 3;
+ 	maxPlayers = 11;
+};
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;

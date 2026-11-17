@@ -1,0 +1,109 @@
+author = "=TSS= Brainslush";
+onLoadName = "=TSS= CoXX Fast Rescue"; //statt zB. Co8 Co08
+onLoadmission = "No one will be left behind!"; //statt zB. Co8 Co08
+onLoadIntro = "=TSS= Brainslush";
+//loadScreen = "<bildname>.jpg"; //Nicht unbedingt notwendig
+overviewText = "v02 DC HC1"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+//MS: MilSim
+
+showGPS = 0;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header {
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 56;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+class params {
+    class Daytime {
+        title = "Zeit";
+        texts[] = {"00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"};
+        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
+        default = 5;
+        function = "BIS_fnc_paramDaytime"; // (Optional) [[Functions_Library_(Arma_3)|Function]] [[call]]ed when player joins, selected value is passed as an argument
+        isGlobal = 1; // (Optional) 1 to execute script / function locally for every player who joins, 0 to do it only on server
+    };
+    class Weather {
+        title = $STR_A3_rscattributeovercast_title;
+        values[] = {0,25,50,75,100};
+        texts[] = {
+            $STR_A3_rscattributeovercast_value000_tooltip,
+            $STR_A3_rscattributeovercast_value025_tooltip,
+            $STR_A3_rscattributeovercast_value050_tooltip,
+            $STR_A3_rscattributeovercast_value075_tooltip,
+            $STR_A3_rscattributeovercast_value100_tooltip
+        };
+        default = 25;
+        function = "BIS_fnc_paramWeather";
+    };
+    class HasCars {
+        title = "Gegner hat Wrum-Wrum mit Peng-Peng";
+        texts[] = {"Ja","Nein"};
+        values[] = {1,0};
+        default = 1;
+        isGlobal = 0;
+    };
+    class HasApcs {
+        title = "Gegner hat Wrum-Wrum mit Bam-Bam";
+        texts[] = {"Ja","Nein"};
+        values[] = {1,0};
+        default = 1;
+        isGlobal = 0;
+    };
+    class HasMbts {
+        title = "Gegner hat Wrum-Wrum mit Big Bada-Bum";
+        texts[] = {"Ja","Nein"};
+        values[] = {1,0};
+        default = 1;
+        isGlobal = 0;
+    };
+    class HasHelis {
+        title = "Gegner hat Schrub-Schrub-Schrub";
+        texts[] = {"Ja","Nein"};
+        values[] = {1,0};
+        default = 1;
+        isGlobal = 0;
+    };
+    class HasMortar {
+        title = "Gegner hat Flump Wiuuuu Bum";
+        texts[] = {"Ja","Nein"};
+        values[] = {1,0};
+        default = 1;
+        isGlobal = 0;
+    };
+};
+
+class CfgFunctions {
+    #include "vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers {
+    class VCM_CBASettings {
+        init = "call VCM_fnc_CBA_Settings";
+    };
+};
+class CfgRemoteExec {
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+};

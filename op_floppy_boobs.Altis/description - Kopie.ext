@@ -1,0 +1,48 @@
+﻿author = "[=TSS=] joker7, [77th AD] CHAOS";
+onLoadName = "[=TSS=] Co48 Op Floppy Boobs"; //statt zB. Co8 Co08
+onLoadmission = "";
+onLoadIntro = "[=TSS=] joker7, [77th AD] CHAOS";
+loadScreen = "images\TSSWallpaper6.jpg"; //Nicht unbedingt notwendig
+overviewText = "0.10 || E || HC2"; // + weitere Infos
+
+//DC: Daily Combat
+//EV: Event
+//Z: Zeus
+//ZS: Zeus-Support
+
+showGPS = 0;
+enableDebugConsole = 1;
+disabledAi = 1;
+
+class Header
+{
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 46;
+};
+
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+
+/* Vcom stuff */
+class CfgFunctions
+{
+	#include "Vcom\cfgFunctions.hpp"
+	#include "plank\plank.h"
+};
+
+class Extended_PreInit_EventHandlers
+{
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
+
+//Halo Script
+class COB
+{
+    class functions
+		{
+            class HALO {file = "scripts\fn_halo.sqf"};
+        };
+};

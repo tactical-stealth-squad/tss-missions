@@ -1,0 +1,25 @@
+[x] Ende umgestalten - alles ab Verstärkung von fob obeh
+[x] Loadout der Fahrzeuge besser verteilen
+[-] Morgengebet noch mehr übersteuern
+[x] Ein paar Civs
+[x] Unterlauf- & Handgranaten im Fahrzeug
+[x] LKWs spawnen nicht
+[x] Südcamp macht nur Quatsch
+[x] auto richtung sued
+[-] pkw gruppe zu langsam von camp sued
+[] briefing umschreiben
+[x] morgengebet testen
+[x] delay sued camp
+[x] delay flughafen spawn
+[x] add epi pens
+[x] delay verstaerkung nord, bzw trigger
+[x] delay sued
+[ ] magazine fuer das statische mg testen
+[x] großes mg vom obersten Dach entfernen
+[ ] Settings fuer Civs
+[x] Unit voice over konfigurieren
+[x] Medical Settings überprüfen
+[x] add civ exclusion zone
+
+CUP_C_Lada_GreenTK_CIV, CUP_C_Volha_Limo_TKCIV, CUP_C_Volha_Gray_TKCIV, CUP_C_Volha_Blue_TKCIV, CUP_C_TT650_TK_CIV, CUP_C_V3S_Open_TKC
+[CFP_C_ME_Civ_2_01, CFP_C_ME_Civ_2_01]

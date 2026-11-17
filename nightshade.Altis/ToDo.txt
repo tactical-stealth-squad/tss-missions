@@ -1,0 +1,9 @@
+###für v1.03###
+++ Objecttexture global -> get to the chopper
+oo Patrouile Felsen stand -> Mal schauen, ob es nochmal passiert
+++ tasks false (keine Grünschaltung)
+++ Ammo Kisten tauschen -> Fahrzeug 
+++ Fennek Beschuss -> APC one Kill? -> extra für Fennek auch ohne selection = []
+++ Lock Vehicle -> LKW 
+++ "Fennek Waffenanlage"
+++ Rechtschreibung (Colonel und Nachschub - Konvoi)

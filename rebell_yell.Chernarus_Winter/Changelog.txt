@@ -1,0 +1,42 @@
+[o_hide_Motar, [mot_1, mot_2, mot_3], 0, 60, 5, 75, true] call compile preprocessFileLineNumbers "scripts\fn_mortar_pfh.sqf"; 
+
+
+++ umgesetzt/behoben/belassen
+-- noch umzusetzen 
+-0 umgesetzt - SP Test erfolgt
++0 umgesetzt - MP Test ausstehend
+
+
+### Changelog nach Mission am 04.02.2023 bei ASG###
+++ Reinf Devils Castle kam zu früh -> Trigger verkleinert
+++ MicroDAGR hatte DM -> rausgenommen
+++ Medical Kram an Zielpunkten -> nein, Ziel ist es immer zu Base zurück zu fliegen
++0 Person auf Container bei PustaGrad -> Container normales Object gesetzt (-> zu testen)
+-0 STAMINA Problem -> Ace Performance Faktor auf 2 gesetzt
+++ BTR zu wenig Muni -> von 50 auf 75% gesetzt 
+++ BMP als Alternative -> done (muss noch auf 75% ammo gesetzt werden -> 70%)
+++ CFP/ALive anti-random Variable setzen -> done
++0 Co-Pilot Paramedic -> 3 neue Slots (Paramedic, 2xBordschütze/Mechaniker)
+++ Base: CUP Gebäude gegen Vanilla tauschen (zu oft addaction door open) -> Erstmal lassen um Objecte zu sparen
++0 Script das Spieler aus "toten" Fahrzeugen geworfen wird
+++ Fuel für Fahrzeuge mit WP -> Done, jeweils in einem WP "setfuel 1"
+++ Richtige Unterlauf in die Kisten -> Done
+++ Loadouts überdenken (SZ statt 9mm für Greni?!) -> bleibt vorerst dabei :-)
+++ Reifenstapel -> 20 Ersatzreifen im RePair LKW
+++ Respawn versetzen -> done
+++ Message an Piloten "Kiste wegbringen" -> Done (falschen Classname verwendet)
+++ Mörser aus VCOM nehmen? -> Mörser bleibt in VCOM; schießt sich genauso ein wie LAMBS
+++ ggf. zweite Mörserstellung am Konvoi (random delete)
+++ Ohrstöpsel für Piloten -> done
+++ Konvoi und DevilsCastle Fahrzeuge abschließen -> done
+++ Feindspawn Konvoi reduzieren -> Done + weniger AT 
+++ LAMBS nicht auf "Tote" schießen -> Done
+++ IVs bzw. IOs durch Spieler verabreichbar -> Done
+
+### Changelog nach Mission am 06.02.2023 bei TSS (CM)###
++0 Loadout Führung braucht Rucksack + 117 -> done
+++ BMP und BTR 60 in der Base -> done (BTR 80 raus)
++0 kein Rauch für Units im Haus -> allen Statics Rauch genommen - schauen was VCOM drauß macht. 
++0 Pilotenkiste sperren -> done
++0 Attack WP auflösen und in die Scripte bzw. Trigger übernehmen -> done
++0 Kollege auf Container scripten -> done

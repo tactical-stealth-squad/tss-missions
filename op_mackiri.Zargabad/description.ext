@@ -1,0 +1,112 @@
+cba_settings_hasSettingsFile = 1;
+
+// VCOM Begin
+allowFunctionsRecompile = 1;
+
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+
+};
+
+class Extended_PreInit_EventHandlers {
+    VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+class CfgFunctions
+{
+    #include "vcom\cfgFunctions.hpp"
+};
+// VCOM End
+
+author="=TSS= zinki";
+OnLoadName = "=TSS= Co10 Operation Mackiri";
+OnLoadMission = "Tötet die Verräter!";
+loadscreen = "image\load_screen_1.jpg";
+
+briefingName = "=TSS= Co10 Operation Mackiri";
+overviewText = "0.72 // Parameter // Optional: +2 Player";
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 13;
+};
+
+enableDebugConsole = 1;
+disabledAi = 1;
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+/// Debriefing
+debriefing = 1;
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Ended";
+		subtitle = "";
+		description = "";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class Lose
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
+
+/// Parameter
+class Params
+{
+	class AI_MOD
+	{
+		title = "AI-MOD";
+		texts[] = {"VCOM","LAMBS","Both","No AI-MOD"};
+		values[] = {0,1,2,0};
+		default = 2;
+		file = "scripts\AI_MOD.sqf";
+		isGlobal = 0;
+	};
+
+	class Vehicle
+	{
+		title = "Vehicle";
+		texts[] = {"BMP-2","BTR-80"};
+		values[] = {0,1};
+		default = 1;
+		file = "scripts\Vehicle.sqf";
+		isGlobal = 0;
+	};
+};

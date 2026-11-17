@@ -1,0 +1,73 @@
+cba_settings_hasSettingsFile = 1;
+
+#include "DAZ_BCM_POWER_PLANT\Dialog\define_login.hpp"
+#include "DAZ_BCM_POWER_PLANT\Dialog\login_elec.hpp"
+
+
+class cfgFunctions
+{
+	#include <DAZ_BCM_POWER_PLANT\FUNCTIONS.hpp>
+
+};
+
+author="zinki";
+OnLoadName = "=TSS= Co8 Lost Leo";
+OnLoadMission = "Finden Sie den Panzer!";
+loadscreen = "image\Lost_leo.jpg";
+
+briefingName = "=TSS= Co8 Lost Leo";
+OverViewText = "v0.11 || DC || HC ";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 11;
+};
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+
+class CfgSounds {
+	sounds[] = {};
+
+	class DAZ_Hack_son
+	{
+		name = "DAZ_BCM_Hack_son";
+		sound[] = {"DAZ_BCM_POWER_PLANT\sound\DAZ_BCM_Hack_son.ogg", 8, 1, 15};
+		titles[] = {};
+	};
+	class DAZ_mdp_ok
+	{
+		name = "DAZ_mdp_ok";
+		sound[] = {"DAZ_BCM_POWER_PLANT\sound\DAZ_BCM_mdp_ok.ogg", db+20, 1};
+		titles[] = {};
+	};
+	class DAZ_mdp_erreur
+	{
+		name = "DAZ_mdp_erreur";
+		sound[] = {"DAZ_BCM_POWER_PLANT\sound\DAZ_BCM_mdp_erreur.ogg", db+20, 1};
+		titles[] = {};
+	};
+	class alarm_sound
+	{
+		name = "Alarm";
+		sound[] = {"\music\alarm_OPFOR.wss", db+0, 1.0};
+		titles[] = {0,""};
+	};
+};

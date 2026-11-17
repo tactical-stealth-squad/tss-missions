@@ -1,0 +1,57 @@
+###Für 0.66###
+Ich guck grad mal über die Loadouts
+Russen haben i.d.R. keine Visiere
+Das 6sh122 gibts erst seit 2015
+Und wie üblich, die Brille geht gar nicht
+Das ist für die Makkaroni oder?
+Schalldämpfer auch eher weniger, es sei denn wir reden von Spezialeinheiten
+Nicht auch die Desert PKP, wenn schon die Desert AK
+Die Magazine sind wieder angeschossen.
+Ne AK-74 mit Zweibein - Warum?
+Das PSO von der SVD hat keine Möglichkeit für Iron Sight
+Die Besatzung hat garantiert keine Visiere
+Crew Lead fällt ja eh weg
+Da könnte man überlegen die Vanilla AKS zu verbauen
+Die haben im Fahrzeug bestimmt keine Knieschoner an
+Es gibt so nen Takistani Crew Man Belt: CUP_V_O_TK_CrewBelt
+Der passt vermutlich besser
+
+
+To-Do
+++ Crew s11 löschen
+++ Name der Einheiten prüfen (u. a. Crew / UGL)
+++ Parameter für VCOM / LAMBS
+++ Scripte prüfen
+++ Kisteninhalte für neue Loadouts anpassen
+oo Loadouts von Gearfield prüfen lassen -> Nicht alles angenommen
+++ Datum ändern
+
+
+FTL hat keinen UGL aber noch die Weste mit den VOG Taschen
+Der MG-Schütze kann noch en Gurt mehr mitnehmen
+Dafür hat der Schütze mit UGL nicht die passende Weste dazu
+Passt. Kannst auch das pinke nehmen
+Brauch der MG2 en Vector oder tuts da auch en Fernglas
+
+ich weiß nicht ob en Kestrel bei nem SVD Sinn macht.
+Da könnte man das Vector auch weglassen.
+Der hat ja eh kein Atrax dabei
+Und das PSO hat ne bessere Vergrößerung als das Vector
+
+Warum hat der Demo Mensch den IEDs dabei, hat der die unterwegs gefunden?
+Der Sani hat 103 Magazine dabei
+Dem BTR Schützen kann man noch en Vector spendieren
+Und eigentlich kannst Du dann jedem auch das normale GPS wegnehmen. Da spart man nochmal etwas Gewicht
+
+
+###Feedback CM 24.05###
+++ Rechtschreibung "explo" und AT -> Grenadier // Colonels eleminieren // vor TOW Stellung "kleiner" streichen
+++ CO10 belassen statt CO10-12 -> prüfen, ob passt
+++ S12 Loadout fixen 
+++ CBA Settings korrigieren
+++ TOW Stellung -> Vanilla Hescos und Bunker -> See Niveau
+++ Bus locken
+++ Stryker vs BTR testen -> CUP METIS und AT5 des BMP2 brechen den Stryker (Test mit Schuss auf Turm)
+++ Zeuchs in den BTR 80 laden -> per Script/Parameter gelöst
+++ BMP ?! -> per Script/Parameter gelöst
+++ Schaufeln verringern

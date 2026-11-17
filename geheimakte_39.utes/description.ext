@@ -1,0 +1,92 @@
+cba_settings_hasSettingsFile = 1;
+
+// VCOM Begin
+allowFunctionsRecompile = 1;
+
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        mode = 2;
+        jip = 1;
+
+        class vcm_serverask { allowedTargets = 0;jip = 1; };
+        class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+        class SpawnScript { allowedTargets = 0;jip = 1; };
+        class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+        class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+    };
+
+};
+
+class Extended_PreInit_EventHandlers {
+    VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+class CfgFunctions
+{
+    #include "vcom\cfgFunctions.hpp"
+};
+// VCOM End
+
+author="zinki";
+OnLoadName = "=TSS= Co8 Geheimakte 39";
+OnLoadMission = "Finden Sie die Akte!";
+loadscreen = "image\39.jpg";
+
+briefingName = "=TSS= Co8 Geheimakte 39";
+OverViewText = "v1.25 || DC || HC || +2 Player";
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 11;
+};
+
+
+// description.ext settings for revive
+respawn = "BASE";
+respawndelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
+
+// Kartenoptionen
+ShowCompass = 1;
+ShowMap = 1;
+ShowWatch = 1;
+ShowGPS = 1;
+
+// Sounds
+class CfgSounds
+{
+	sounds[] = {};
+	class boot_defect
+	{
+		name = "Boot defect";
+		sound[] = {"\music\vehicle_collision.ogg", db+10, 1.0};
+		titles[] = {0,""};
+	};
+
+	class alarm_sound
+	{
+		name = "Alarm";
+		sound[] = {"\music\alarm_OPFOR.wss", db+0, 1.0};
+		titles[] = {0,""};
+	};
+};
+
+// Intro Musik
+class CfgMusic
+{
+	tracks[]={};
+
+	class music_intro
+	{
+		name = "music_intro";
+		sound[] = {"\music\intro_ghost_recon.ogg", db+10, 1.0};
+	};
+};

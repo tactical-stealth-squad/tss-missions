@@ -1,0 +1,7 @@
++++ Anmerkungen 25.10 +++
+++ Fahrzeug Tanks zerstören -> Toolkit finden
+00 Hint auf Hintsilent umstellen -> Nope, bleibt so
+++ Trigger: Neben Interwall noch Countdown nutzen für die Hints
+00 Performance Factor für Player -> war bereits auf 2
+++ Pats auf "langsam" stellen beim ersten Ziel
+++ Mauern und KI -> Versetzen und "Durchgänge" lassen.
