@@ -83,8 +83,9 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						description="Squad Leader";
+						description="Squad Leader@Alpha";
 						isPlayer=1;
+						isPlayable=1;
 					};
 					id=1;
 					type="B_Soldier_SL_F";
@@ -100,7 +101,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medic";
+						description="Medic@Alpha";
 						isPlayable=1;
 					};
 					id=2;
@@ -117,7 +118,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Autorifleman";
+						description="Autorifleman@Alpha";
 						isPlayable=1;
 					};
 					id=3;
@@ -134,7 +135,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Rifleman (AT)";
+						description="Rifleman (AT)@Alpha";
 						isPlayable=1;
 					};
 					id=4;
@@ -151,7 +152,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Rifleman";
+						description="Rifleman@Alpha";
 						isPlayable=1;
 					};
 					id=5;
@@ -198,7 +199,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						description="Team Leader";
+						description="Team Leader@Bravo";
 						isPlayable=1;
 					};
 					id=7;
@@ -215,7 +216,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Grenadier";
+						description="Grenadier@Bravo";
 						isPlayable=1;
 					};
 					id=8;
@@ -232,7 +233,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Marksman";
+						description="Marksman@Bravo";
 						isPlayable=1;
 					};
 					id=9;
@@ -249,7 +250,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Rifleman";
+						description="Rifleman@Bravo";
 						isPlayable=1;
 					};
 					id=10;

@@ -1,5 +1,6 @@
 onLoadName = "Operation Example";
 author = "TSS";
+overviewText = "Two fire teams clear Stratis Air Base before first light.";
 
 class Header
 {
