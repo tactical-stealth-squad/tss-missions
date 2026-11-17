@@ -1,0 +1,2 @@
+# Keep mission files byte for byte (Eden on Windows writes CRLF).
+* -text

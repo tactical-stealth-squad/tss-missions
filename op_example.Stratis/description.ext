@@ -1,0 +1,9 @@
+onLoadName = "Operation Example";
+author = "TSS";
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 9;
+};

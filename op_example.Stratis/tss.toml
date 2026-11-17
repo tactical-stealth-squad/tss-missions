@@ -1,0 +1,7 @@
+title = "Operation Example"
+author = "TSS"
+type = "coop"
+tags = ["example", "infantry"]
+min_players = 4
+max_players = 9
+summary = "Two fire teams clear Stratis Air Base before first light."
