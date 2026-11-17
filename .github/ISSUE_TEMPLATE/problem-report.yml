@@ -1,0 +1,46 @@
+name: Problem report
+description: Report a problem with a mission (bug, balance, briefing, other).
+title: "[problem] "
+labels: [problem-report]
+body:
+  - type: input
+    id: mission
+    attributes:
+      label: Mission
+      description: The mission's folder name.
+      placeholder: op_example.Stratis
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - bug
+        - balance
+        - briefing
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and where in the mission.
+    validations:
+      required: true
+  - type: input
+    id: operation
+    attributes:
+      label: Operation
+      description: Link to the operation on the TSS site where it happened, if any.
+      placeholder: https://tactical-stealth-squad.de/operations/...
+    validations:
+      required: false
+  - type: input
+    id: reported_by
+    attributes:
+      label: Reported by
+      description: Site display name; filled in by the TSS site.
+    validations:
+      required: false
