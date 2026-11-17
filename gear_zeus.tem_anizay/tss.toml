@@ -1,7 +1,0 @@
-title = "Zeus (Anizay)"
-author = "Gearfield"
-type = "zeus"
-tags = ["zeus"]
-min_players = 1
-max_players = 32
-summary = "Zeus-run mission on tem_anizay for up to 32 players."
