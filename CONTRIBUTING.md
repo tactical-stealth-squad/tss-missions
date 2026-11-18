@@ -93,4 +93,8 @@ Spelling matters: a key the site does not know (for example `recommended_players
 
 ## 5. Reporting a problem with a mission
 
-Players report problems on the mission's page on the TSS site; the site opens an issue here for them. You can also use **Issues → New issue → Problem report** on GitHub. Reports from the site get their labels automatically. A report filed on GitHub only gets `problem-report`; a mission maker with write access then adds the matching `category:` label (`category:bug`, `category:balance`, `category:briefing` or `category:other`) and the label `mission:<folder name>` (for example `mission:op_example.Stratis`), so it shows up on the right mission.
+Players report problems on the mission's page on the TSS site; the site opens an issue here for them. Reports from the site say "Reported by: TSS member": the site never sends the reporter's name or email to GitHub (the site shows who reported it to logged-in members). They get the labels `problem-report`, `category:<bug|balance|briefing|other>` and, when the folder name fits GitHub's 50-character label limit, `mission:<folder name>`. A hidden `<!-- tss-report id=… -->` line at the end of the body links the issue to the site's report; leave it in place.
+
+You can also use **Issues → New issue → Problem report** on GitHub. Such a report only gets `problem-report`; the site reads the mission and category from the form fields. If the Mission field is wrong, a mission maker with write access can add the label `mission:<folder name>` (for example `mission:op_example.Stratis`) and a `category:` label (`category:bug`, `category:balance`, `category:briefing` or `category:other`).
+
+The mission page on the site lists a mission's open reports. Close an issue as *completed* or *not planned* when it is handled; deleting it, transferring it or removing the `problem-report` label also takes it off the site.
