@@ -15,9 +15,9 @@ Each mission is one folder at the top of this repository, exactly as Eden saves 
 - `Documents\Arma 3\missions\` for your main profile, or
 - `Documents\Arma 3 - Other Profiles\<profile>\missions\` for any other profile.
 
-Eden names the folder `<name>.<map>`, for example `[TSS]_Co08_Snakehead.Stratis`. The part after the last `.` is the map, and Arma needs it. You can name the rest as you like, but the name is how the site knows the mission, so keep it the same across releases and do not put a version in it (see below). Eden writes spaces in folder names as `%20`, so prefer `_`.
+Eden names the folder `<name>.<map>`, for example `[TSS]_Co08_Snakehead.Stratis`. The part after the last `.` is the map, and Arma needs it. You can name the rest as you like, but the name is how the site knows the mission. Eden writes spaces in folder names as `%20`, so prefer `_`.
 
-**Do not put a version in the folder name.** The folder name stays the same across releases: keep saving the mission under the same name in Eden, and upload each new version into the existing folder (see section 0). A mission is known by its folder name, so a renamed folder is a new mission. The site rejects a folder with a version in its name (for example `_2v04` or `_v1_00`) and opens an issue here. The version of a mission is the commit. If you want a visible label, add `version = "..."` to `tss.toml` (section 4), and raise it with each release. Whoever packs a PBO adds the version to the file name at packing time.
+**Do not put a version in the folder name.** The folder name stays the same across releases: keep saving the mission under the same name in Eden, and upload each new version into the existing folder (see section 0). A mission is known by its folder name, so a renamed folder is a new mission. The site rejects a folder with a version in its name (for example `_2v04` or `_v1_00`) and opens an issue here. Only a lower-case `v` counts as a version, so names such as `_V22` (the aircraft) are fine. The version of a mission is the commit. If you want a visible label, add `version = "..."` to `tss.toml` (section 4), and raise it with each release. Whoever packs a PBO adds the version to the file name at packing time.
 
 The folder must contain:
 
