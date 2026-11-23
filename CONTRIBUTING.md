@@ -81,6 +81,7 @@ A small text file next to `mission.sqm` for things the mission files cannot say.
 tags = ["night", "stealth"]     # up to 10; lower case letters, digits and "-", each up to 24 characters, no tag twice
 recommended_min_players = 4     # the fewest players the mission is fun with, 1 to 200
 version = "1.2"                 # a label for the release, 1 to 24 characters; raise it with each release
+title = "Monument"              # the name the site shows instead of onLoadName, 1 to 120 characters
 
 # Only if the site cannot read your briefing: these sections replace it, shown in this order.
 [[briefing]]
@@ -91,6 +92,8 @@ text = "Text of the section.<br/>A second line."
 title = "Mission"
 text = "..."
 ```
+
+`title` is for missions whose `onLoadName` is not a name but a task text, for example "Zerstören Sie die AA Stellungen und finden Sie den UN-General" for Monument. The site shows the `title` exactly as you write it (spaces at the start and end are dropped), so write it the way it should read, without `[TSS]` or `Co08`. Without a `title` the site shows the `onLoadName` as before. The Info tab of the mission still shows the `onLoadName` as the full title.
 
 Spelling matters: a key the site does not know (for example `recommended_players`) is an error, and the site opens an issue here explaining what to fix. The same happens if `mission.sqm` or `description.ext` is missing or cannot be read.
 
